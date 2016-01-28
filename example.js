@@ -1,7 +1,7 @@
-// EtherPortClient is the type of the serialport which shall be debugged
+// EtherPortClient is the type of serial port which shall be debugged
 var EtherPortClient = require ("etherport-client").EtherPortClient;
 
-// SerialPortDebug is a proxy type for SerialPortDebug
+// SerialPortDebug is a proxy type defined to debug EtherPortClient
 var SerialPortDebug = require ("./serialport-debug")(EtherPortClient);
 
 // port to be used by EtherPortClient and EtherPort
@@ -14,7 +14,7 @@ var sp = new SerialPortDebug({
     port: port
 });
 
-// The rest of the code is sample code to exchange with an Etherport server-side serialport
+// The rest of the code is sample code to exchange with an Etherport server-side serial port
 var loremIpsum = require('lorem-ipsum');
 function makeText() {
     return loremIpsum({sentenceLowerBound: 3})
