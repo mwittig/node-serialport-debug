@@ -1,0 +1,39 @@
+{
+  "name": "node-serialport-debug",
+  "version": "0.1.0",
+  "description": "Client-side virtual serial port for Etherport for the implementation of firmata-compatible boards and tethering hubs to control boards by a remote entity.",
+  "author": {
+    "name": "Marcus Wittig",
+    "url": "https://github.com/mwittig"
+  },
+  "main": "index.js",
+  "keywords": [
+    "firmata",
+    "serialport",
+    "etherport"
+  ],
+  "homepage": "https://github.com/mwittig/node-serialport-debug/tree/master",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mwittig/node-serialport-debug.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwittig/node-serialport-debug/issues"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "mwittig",
+      "url": "https://github.com/mwittig"
+    }
+  ],
+  "dependencies": {
+    "hexer": "^1.5.0"
+  },
+  "devDependencies": {
+    "etherport": "git+https://github.com/mwittig/etherport.git",
+    "etherport-client": "git+https://github.com/mwittig/etherport-client.git",
+    "lorem-ipsum": "^1.0.3"
+  }
+}
